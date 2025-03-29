@@ -73,6 +73,6 @@ class SlackIssueRegistry : IssueRegistry() {
     add(DoNotCallViewToString.ISSUE)
     add(ItemDecorationViewBindingDetector.ISSUE)
     add(NullableConcurrentHashMapDetector.ISSUE)
-    add(NotNullReadOnlyVariableDetector.ISSUE)
+    addAll(AlwaysNullReadOnlyVariableDetector.ISSUES)
   }
 }
